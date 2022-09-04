@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: max(200px, 37vw);
+  height: 100vh;
+}
+
+.text-and-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 37vw;
+  padding: 1vh 0 1vh 0;
+
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  text-indent: -9999px;
+  width: 10vw;
+  height: 12vh;
+  filter: invert(99%) sepia(12%) saturate(266%) hue-rotate(171deg) brightness(99%) contrast(94%);
+}
+
+.logo-text {
+  font-size: 10vmin;
+  font-family: 'Playfair Display', serif;
+}
+
+.credit {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cfcfcf;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #cfcfcf;
+}
