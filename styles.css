@@ -2,6 +2,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  background-color: #f9fafb
 }
 
 .image-container {
@@ -56,7 +57,34 @@ div {
   text-decoration: none;
 }
 
-a {
+.credit > a {
   text-decoration: underline;
   color: #cfcfcf;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12vh 0 12vh 0;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-text-container {
+  padding: 0 15rem 0 4rem;
+}
+
+.main-text {
+  font-weight: bold;
+  font-size: 3vmin
+}
+
+.form-container {
+  padding: 0 15rem 0 4rem;
+  background-color: white;
+  box-shadow: 0.25vmin 10px 15px rgba(48, 47, 47, 0.2);
+}
+
+.call-to-action {
+  font-size: 3vmin;
+  font-weight: 450;
 }
