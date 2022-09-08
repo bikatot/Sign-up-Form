@@ -28,16 +28,42 @@
     </div>
     <div class="form-container">
       <p class="call-to-action">Let's do this!</p>
-      <form action="#" method="post">
-        <div>
-          <label for="first-name">FIRST NAME </label>
-          <input type="text" id ="first-name">
-        </div> 
+      <form id="form" action="https://httpbin.org/post" method="post">
+        <div class="form-left">
+          <div>
+            <label for="first-name">FIRST NAME </label>
+            <input placeholder=" " type="text" id ="first-name" name="first-name">
+            <span></span>
+          </div> 
+          <div>
+            <label for="email">EMAIL</label>
+            <input  placeholder=" " type="email" id ="email" name="email">
+            <div class="error-message">* Please enter a valid e-mail address</div>
+          </div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input  placeholder=" " type="password" id ="password" name="user-password">
+          </div>
+        </div>
+        <div class="form-right">
+          <div>
+            <label for="last-name">LAST NAME</label>
+            <input  placeholder=" " type="text" id ="last-name" name="last-name">
+          </div>
+          <div>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input   placeholder=" " type="tel" id ="phone-number" name="phone" >
+          </div>
+          <div>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input  placeholder=" " type="password" id ="confirm-password" name="confirm-password">
+          </div>
+        </div>
       </form>
     </div>
     <div class="account">
-      <button class="create-account">Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <button form="form" class="create-account">Create Account</button>
+      <p>Already have an account? <a class="log-in" href="#">Log in</a></p>
     </div>
   </div>
 </body>
