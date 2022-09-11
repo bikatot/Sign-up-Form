@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
   <div class="image-container">
     <img src="images/christine-O_gxBgiJoA0-unsplash.jpg" alt="an image of a skyscraper">
     <div class="text-and-logo-container">
-      <img class="logo" src="images/skyscraper-town-svgrepo-com.svg" alt="">
+      <img class="logo" src="images/skyscraper-town-svgrepo-com.svg" alt="logo featuring skyscraper-town">
       <div class="logo-text">REA</div>
     </div>
     <div class="credit">
@@ -32,31 +33,32 @@
         <div class="form-left">
           <div>
             <label for="first-name">FIRST NAME </label>
-            <input placeholder=" " type="text" id ="first-name" name="first-name">
+            <input required placeholder=" " type="text" id ="first-name" name="first-name" tabindex="1">
             <span></span>
           </div> 
           <div>
             <label for="email">EMAIL</label>
-            <input  placeholder=" " type="email" id ="email" name="email">
-            <div class="error-message">* Please enter a valid e-mail address</div>
+            <input required  placeholder=" " type="email" id ="email" name="email" tabindex="3">
+            <div class="error-message-email">* Please enter a valid e-mail address</div>
           </div>
           <div>
             <label for="password">PASSWORD</label>
-            <input  placeholder=" " type="password" id ="password" name="user-password">
+            <input required  placeholder=" " type="password" id ="password" name="user-password" pattern="^(?:(?:(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]))|(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[a-z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))).{8,32}$" tabindex="5">
+            <div class="error-message-password">* Passwords do not match</div>
           </div>
         </div>
         <div class="form-right">
           <div>
             <label for="last-name">LAST NAME</label>
-            <input  placeholder=" " type="text" id ="last-name" name="last-name">
+            <input required  placeholder=" " type="text" id ="last-name" name="last-name" tabindex="2">
           </div>
           <div>
             <label for="phone-number">PHONE NUMBER</label>
-            <input   placeholder=" " type="tel" id ="phone-number" name="phone" >
+            <input required   placeholder=" " type="tel" id ="phone-number" name="phone" tabindex="4">
           </div>
           <div>
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input  placeholder=" " type="password" id ="confirm-password" name="confirm-password">
+            <input required  placeholder=" " type="password" id ="confirm-password" name="confirm-password" tabindex="6">
           </div>
         </div>
       </form>
